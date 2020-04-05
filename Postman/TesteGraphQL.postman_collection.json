@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "fffed722-2962-4d06-9c6c-cbca7caea932",
+		"name": "TesteGraphQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API Base",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Query\": \"query { human (id: \\\"1\\\") { name, homePlanet, appearsIn, friends {name} } }\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60064/api/graphQL",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60064",
+					"path": [
+						"api",
+						"graphQL"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

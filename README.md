@@ -1,2 +1,3 @@
 # GraphQL.NET
-Estudo do uso de GraphQL em C#
+
+Projeto de Teste para o GraphQL em C#
